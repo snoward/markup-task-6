@@ -1,0 +1,201 @@
+.container
+{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'c . . s u'
+        '. n n a .'
+        'l e e e .'
+        '. b b b .';
+}
+
+.city
+{
+    grid-area: c;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.city a:visited
+{
+    color: #999;
+}
+
+.settings
+{
+    display: flex;
+    grid-area: s;
+    justify-content: flex-end;
+}
+
+.settings a:visited
+{
+    color: #000;
+}
+
+.user
+{
+    display: flex;
+    grid-area: u;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 0 5px #999;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.user a:visited
+{
+    color: #000;
+}
+
+.login::first-letter
+{
+    color: #f00;
+}
+
+.news
+{
+    grid-area: n;
+}
+
+.news-header
+{
+    margin-bottom: 10px;
+}
+
+.world-news
+{
+    font-size: 1em;
+}
+
+.region-news
+{
+    font-size: .9em;
+    color: #6da2e1;
+}
+
+.date
+{
+    font-size: .7em;
+    color: #999;
+}
+
+.news-list
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-item
+{
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.list-item:visited
+{
+    color: #000;
+}
+
+.list-item::before
+{
+    content: '•';
+}
+
+.money
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.money-value
+{
+    margin-right: 18px;
+}
+
+.money-delta
+{
+    color: #999;
+}
+
+.add
+{
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo
+{
+    display: flex;
+    justify-content: flex-end;
+    grid-area: l;
+}
+
+.engine
+{
+    grid-area: e;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.search-header
+{
+    margin-bottom: 15px;
+}
+
+.ya-service-link
+{
+    margin-right: 20px;
+    color: #0054b9;
+}
+
+.search-box
+{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.search-input
+{
+    border: 2px solid #ffdb4d;
+    width: 90%;
+    height: 40px;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+.search-button
+{
+    border: none;
+    background-color: #ffdb4d;
+    width: 10%;
+}
+
+.search-input,
+.search-button
+{
+    outline-width: 0;
+}
+
+.banner 
+{
+    grid-area: b;
+}
+
+.banner-image
+{
+    width: 90%;
+    height: 90%;
+}
+
+.grey
+{
+    color: #999;
+}
