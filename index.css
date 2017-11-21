@@ -204,19 +204,20 @@ a
 .vidgets
 {
     grid-area: v;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 
-.favorites
-{
-    grid-area: f;
-}
-
-.favorites-list
+.favorites-list,
+.tv-list
 {
     list-style: none;
+    padding: 0;
 }
 
-.favorites-list-item
+.tv-list-item > span
 {
-    padding: 0;
+    margin-right: 10px;
 }
