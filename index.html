@@ -8,6 +8,7 @@
 <body>
     <main class="container">
         <section class="city">
+            <div class="city-icon"></div>
             <a href="">Екатеринбург</a>
         </section>
         <section class="settings">
@@ -26,7 +27,7 @@
                 <a class="region-news" href="">В Екатеринбурге</a>
                 <span class="date">13 ноября, понедельник 16:57</span>
             </div>
-            <ol class="news-list">
+            <ul class="news-list">
                 <li class="list-item">
                     <a href="">Школьник из ЯНАО рассказал в Бундестаге о «невинных солдатах вермахта»</a>
                 </li>
@@ -42,7 +43,7 @@
                 <li class="list-item">
                     <a href="">CNN: ВМС Аргентины могли уловить шум от пропавшей подлодки</a>
                 </li>
-            </ol>
+            </ul>
             <div class="money">
                 <div class="money-value">
                     <a href="">USB ЦБ</a>
@@ -94,10 +95,12 @@
             <img class="banner-image" src="images/banner2.png" 
                 title="Реклама" alt="Рекламный баннер" width="1452" height="176">
         </section>
-        <section class="vidgets">
+        <section class="widgets">
             <div class="favorites">
-                <h2>Посещаемое</h2>
-                <ol class="favorites-list">
+                <h2>
+                    <a href="">Посещаемое</a>
+                </h2>
+                <ul class="favorites-list">
                     <li class="favorites-list-item">
                         <a>Маркет</a>
                         <span>- китайская распродажа</span>
@@ -126,17 +129,21 @@
                         <a>Авиабилеты</a>
                         <span>- из Екатеринбурга</span>
                     </li>
-                </ol>
+                </ul>
             </div>
             <div class="jokes">
-                <h2>Лучшие анекдоты</h2>
+                <h2>
+                    <a href="">Лучшие анекдоты</a>
+                </h2>
                 <span>Раздел</span>
                 <a href="">Медицинские</a>
                 <p>Вас лечить хорошо или бесплатно?</p>
             </div>
             <div class="tv">
-                <h2>Телепрограмма</h2>
-                <ol class="tv-list">
+                <h2>
+                    <a href="">Телепрограмма</a>
+                </h2>
+                <ul class="tv-list">
                     <li class="tv-list-item">
                         <span>16:00</span>
                         <span>Понять. Простить</span>
@@ -167,7 +174,100 @@
                         <span>Реальные пацаны</span>
                         <span class="grey">ТНТ</span>
                     </li>
-                </ol>
+                </ul>
+            </div>
+            <div class="auto-news">
+                <h2>
+                    <a href="">Автомобильные новости</a>
+                </h2>
+                <ul class="auto-news-list">
+                    <li class="auto-news-list-item">
+                        <a href="">Peugeot 308: То ли доля, то ли не доля</a>
+                        <span class="grey">07:04</span>
+                    </li>
+                    <li class="auto-news-list-item">
+                        <a href="">Renault Duster: Тень командора Андерсона</a>
+                        <span class="grey">08:15</span>
+                    </li>
+                    <li class="auto-news-list-item">
+                        <a href="">J.D.Power: качество Jaguar ниже, чем у Kia</a>
+                        <span class="grey">12:00</span>
+                    </li>
+                    <li class="auto-news-list-item">
+                        <a href="">Infiniti QX80: Дело было на карьере</a>
+                        <span class="grey">14:52</span>
+                    </li>
+                    <li class="auto-news-list-item">
+                        <a href="">Citroen DS: Падение Парижа</a>
+                        <span class="grey">15:30</span>
+                    </li>
+                    <li class="auto-news-list-item">
+                        <a href="">Subaru Outback: Тяжкий сон «Арматы»</a>
+                        <span class="grey">18:00</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="weather">
+                <div class="weather-summary">
+                    <h2><a href="">Погода</a></h2>                
+                    <div class="weather-icon"></div>
+                    <span class="weather-now">-3 °C</span>
+                </div>
+                <span>Вечер -5, Ночь -7</span>
+            </div>
+            <div class="traffic">
+                <div class="traffic-summary">
+                    <h2><a href="">Пробки</a></h2>
+                    <div class="traffic-icon"></div>
+                    <span class="traffic-now">1 балл</span>
+                </div>
+                <span>На дорогах свободно</span>
+            </div>
+            <div class="map">
+                <h2>
+                    <a href="">Карта Екатеринбурга</a>
+                </h2>
+                <ul class="map-list">
+                    <li class="map-list-item">
+                        <a href="">Такси</a>
+                    </li>
+                    <li class="map-list-item">
+                        <a href="">Расписания</a>
+                    </li>
+                    <li class="map-list-item">
+                        <a href="">Междугородние автобусы</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="afisha">
+                <h2>
+                    <a href="">Афиша</a>
+                </h2>
+                <ul class="afisha-list">
+                    <li class="afisha-list-item">
+                        <a href="">Субурбикон</a>
+                        <span class="grey">премьера в четверг</span>
+                    </li>
+                    <li class="afisha-list-item">
+                        <a href="">Последний богатырь</a>
+                        <span class="grey">приключения</span>
+                    </li>
+                    <li class="afisha-list-item">
+                        <a href="">Фиксики: Большой секрет</a>
+                        <span class="grey">мультфильм</span>
+                    </li>
+                    <li class="afisha-list-item">
+                        <a href="">Тор: Рагнарёк</a>
+                        <span class="grey">фэнтези</span>
+                    </li>
+                    <li class="afisha-list-item">
+                        <a href="">Убийство в восточном...</a>
+                        <span class="grey">драма</span>
+                    </li>
+                    <li class="afisha-list-item">
+                        Концерты - Brainstorm
+                    </li>
+                </ul>
             </div>
         </section>
     </main>

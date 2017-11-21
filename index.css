@@ -2,18 +2,29 @@
 {
     display: grid;
     grid-gap: 10px;
-    grid-template-rows: 60px 200px 150px 150px 350px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 60px 200px 150px 150px 600px;
+    grid-template-columns: 3fr 3fr 3fr 3fr 2fr;
     grid-template-areas: 'c . . s u'
         '. n n a .'
         'l e e e .'
         '. b b b .'
         '. v v v .';
+    margin: 20px;
 }
 
 .city
 {
     grid-area: c;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.city-icon
+{
+    width: 19px;
+    height: 19px;
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg width="19" height="38" viewBox="0 0 19 38" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"%3E%3Cdefs%3E%3Cg id="a"%3E%3Cpath d="m15 4l-11.9 5.3 5.8 0.8 0.5 5.5 5.6-11.6z"/%3E%3C/g%3E%3C/defs%3E%3Cuse xmlns="http://www.w3.org/2000/svg" xlink:href="%23a" fill="%23B3B3B3"/%3E%3Cuse xmlns="http://www.w3.org/2000/svg" xlink:href="%23a" fill="%23d00" transform="translate(0 19)"/%3E%3C/svg%3E');
 }
 
 a
@@ -46,7 +57,6 @@ a
     padding: 10px;
     box-shadow: 0 0 5px #999;
     border-radius: 3px;
-    font-weight: bold;
 }
 
 .user a:visited
@@ -93,14 +103,9 @@ a
     margin: 0;
 }
 
-.list-item
+li
 {
     margin-bottom: 10px;
-    color: #000;
-}
-
-.list-item:visited
-{
     color: #000;
 }
 
@@ -115,7 +120,9 @@ a
     flex-direction: row;
 }
 
-.money-value
+.money-value,
+.map-list-item,
+.afisha-list-item
 {
     margin-right: 18px;
 }
@@ -202,7 +209,7 @@ a
     color: #999;
 }
 
-.vidgets
+.widgets
 {
     grid-area: v;
     display: flex;
@@ -211,14 +218,85 @@ a
     align-content: flex-start;
 }
 
+.favorites,
+.jokes,
+.tv,
+.auto-news,
+.weather,
+.traffic,
+.afisha
+{
+    width: 33%;
+    margin-bottom: 5px;
+}
+
 .favorites-list,
-.tv-list
+.tv-list,
+.auto-news-list,
+.map-list,
+.afisha-list
 {
     list-style: none;
     padding: 0;
 }
 
-.tv-list-item > span
+.tv-list-item span
 {
     margin-right: 10px;
+}
+
+.auto-news-list
+{
+    height: 200px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.weather
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-summary,
+.traffic-summary
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.weather-icon
+{
+    width: 32px;
+    height: 32px;
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cpath d="M19.74 7.397c4.06 1.61 6.144 6.153 4.666 10.297-1.513 4.235-6.172 6.442-10.407 4.93-.52-.184-1-.416-1.456-.687.958 1.104 2.2 1.987 3.676 2.514 4.575 1.638 9.607-.75 11.24-5.322 1.633-4.575-.752-9.607-5.325-11.24-.792-.282-1.597-.437-2.396-.488z" fill="%23FFB200"/%3E%3Cpath d="M9.082 27.836l-1.233-.988-1.24.977.51-1.536-1.268-.94 1.55.04.456-1.556.444 1.56 1.55-.024-1.275.926.5 1.54zM7.007 14.7l-1.94-1.483-1.952 1.465.81-2.304-1.998-1.405 2.442.06.713-2.334.7 2.34 2.44-.04-2.01 1.384.79 2.312zM28.71 6.1l-1.23-.986-1.24.977.512-1.532-1.267-.937 1.55.04.456-1.557.448 1.56 1.55-.023-1.276.922.5 1.54z" fill-opacity=".697" fill="%237196EA"/%3E%3C/g%3E%3C/svg%3E');
+}
+
+.traffic-icon
+{
+    width: 32px;
+    height: 32px;
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33"%3E%3Cpath fill="%234A8C16" d="M14.588 7.034c-.887.01-1.141.112-2.061.209-3.178.336-6.384 2.727-7.463 5.883-1.079 3.156-.09 5.066 3.825 5.066 1.41-.831 1.435-8.614 5.402-10.269.557-.233 1.118-.429 1.672-.586.267-.076.69-.24.69-.24s-.971-.076-2.065-.063z"/%3E%3Ccircle fill="%2366AB3C" cx="17.003" cy="17.073" r="9.976"/%3E%3Cpath fill="%23333" d="M17.032 7.074c-.87-.016-1.822-.07-3.347.085 4.065.167 7.811 2.414 9.322 7.124.464 1.551 2.469 3.463 3.924 3.581.027-.293.04-.59.04-.891 0-5.411-4.486-9.8-9.939-9.899z"/%3E%3C/svg%3E');
+}
+
+.map
+{
+    width: 25%;
+}
+
+.map-list
+{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    font-weight: bold;
+}
+
+.afisha-list-item:first-child,
+.afisha-list:last-child,
+.login,
+.mail-count
+{
+    font-weight: bold;
 }
