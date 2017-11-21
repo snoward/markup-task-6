@@ -6,7 +6,8 @@
     grid-template-areas: 'c . . s u'
         '. n n a .'
         'l e e e .'
-        '. b b b .';
+        '. b b b .'
+        '. v v v .';
 }
 
 .city
@@ -198,4 +199,24 @@ a
 .grey
 {
     color: #999;
+}
+
+.vidgets
+{
+    grid-area: v;
+}
+
+.favorites
+{
+    grid-area: f;
+}
+
+.favorites-list
+{
+    list-style: none;
+}
+
+.favorites-list-item
+{
+    padding: 0;
 }
