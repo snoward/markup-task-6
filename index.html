@@ -16,8 +16,8 @@
         </section>
         <section class="user">
             <div class="login">snoward</div>
-            <a href="" class="mail">
-                <span class="mail-text">Почта</span>
+            <a class="mail" href="">
+                <span>Почта</span>
                 <span class="mail-count">1</span>
             </a>
         </section>
@@ -28,35 +28,35 @@
                 <span class="date">13 ноября, понедельник 16:57</span>
             </div>
             <ul class="news-list">
-                <li class="list-item">
+                <li class="news-list-item">
                     <a href="">Школьник из ЯНАО рассказал в Бундестаге о «невинных солдатах вермахта»</a>
                 </li>
-                <li class="list-item">
+                <li class="news-list-item">
                     <a href="">В Белоруссии показали видео допроса обвиняемого в шпионаже украинца</a>
                 </li>
-                <li class="list-item">
+                <li class="news-list-item">
                     <a href="">Патриарх Кирилл предупредил о приближении конца света</a>
                 </li>
-                <li class="list-item">
+                <li class="news-list-item">
                     <a href="">Германия не Ямайка: Меркель может уйти с поста канцлера</a>
                 </li>
-                <li class="list-item">
+                <li class="news-list-item">
                     <a href="">CNN: ВМС Аргентины могли уловить шум от пропавшей подлодки</a>
                 </li>
             </ul>
             <div class="money">
                 <div class="money-value">
-                    <a href="">USB ЦБ</a>
+                    <a class="money-category" href="">USB ЦБ</a>
                     <span>59,27</span>
                     <span class="money-delta">+0,05</span>
                 </div>
                 <div class="money-value">
-                    <a href="">EUR ЦБ</a>
+                    <a class="money-category" href="">EUR ЦБ</a>
                     <span>69,67</span>
                     <span class="money-delta">+0,1</span>
                 </div>
                 <div class="money-value">
-                    <a href="">Нефть</a>
+                    <a class="money-category" href="">Нефть</a>
                     <span>62,13</span>
                     <span class="money-delta">-0,97%</span>
                 </div>
@@ -65,11 +65,15 @@
         <section class="add">
             <img class="add-poster" src="images/student-promo.png" 
                 title="Акция для студентов" alt="Скейтборд, на котором число 32" width="150" height="150">
-            <a class="add-link" href="">32 ГБ студентам на Яндекс.Диске</a>
-            <span>Бесплатно и навсегда</span>
+            <a class="add-link" href="">
+                <span>32 ГБ студентам</span>
+                <br>
+                <span>На Яндекс.Диске</span>
+            </a>
+            <span class="add-description">Бесплатно и навсегда</span>
         </section>
         <section class="logo">
-            <img src="images/yandex_logo.png" title="Логотип Яндекса" alt="Яндекс" height="155" width="269">
+            <img src="images/yandex_logo.svg" title="Логотип Яндекса" alt="Яндекс" height="100" width="140">
         </section>
         <section class="engine">
             <div class="search-header">
@@ -85,6 +89,7 @@
             <div class="search-box">
                 <input class="search-input" type="text">
                 <button class="search-button">Найти</button>
+                <span class="button-text"></span>
             </div>
             <div class="search-suggest">
                 <span>Найдётся всё. Например</span>
@@ -96,178 +101,201 @@
                 title="Реклама" alt="Рекламный баннер" width="1452" height="176">
         </section>
         <section class="widgets">
-            <div class="favorites">
-                <h2>
-                    <a href="">Посещаемое</a>
-                </h2>
-                <ul class="favorites-list">
-                    <li class="favorites-list-item">
-                        <a>Маркет</a>
-                        <span>- китайская распродажа</span>
-                    </li>
-                    <li class="favorites-list-item">
-                        <a>Авто.ру</a>
-                        <span>Туссан третьей серии</span>
-                    </li>
-                    <li class="favorites-list-item">
-                        <a>Недвижимость</a>
-                        <span>- продажа студии</span>
-                    </li>
-                    <li class="favorites-list-item">
-                        <a>Работа</a>
-                        <span>- охранником</span>
-                    </li>
-                    <li class="favorites-list-item">
-                        <a>Здоровье</a>
-                        <span>- врач на связи</span>
-                    </li>
-                    <li class="favorites-list-item">
-                        <a>Коллекции</a>
-                        <span>- как мелировать волосы</span>
-                    </li>
-                    <li class="favorites-list-item">
-                        <a>Авиабилеты</a>
-                        <span>- из Екатеринбурга</span>
-                    </li>
-                </ul>
+            <div class="column">
+                <section class="widget">
+                    <h2>
+                        <a class="blue-link" href="">Посещаемое</a>
+                    </h2>
+                    <ul class="favorites-list">
+                        <li class="favorites-list-item">
+                            <a class="favorites-category">Маркет</a>
+                            <span>- китайская распродажа</span>
+                        </li>
+                        <li class="favorites-list-item">
+                            <a class="favorites-category">Авто.ру</a>
+                            <span>Туссан третьей серии</span>
+                        </li>
+                        <li class="favorites-list-item">
+                            <a class="favorites-category">Недвижимость</a>
+                            <span>- продажа студии</span>
+                        </li>
+                        <li class="favorites-list-item">
+                            <a class="favorites-category">Работа</a>
+                            <span>- охранником</span>
+                        </li>
+                        <li class="favorites-list-item">
+                            <a class="favorites-category">Здоровье</a>
+                            <span>- врач на связи</span>
+                        </li>
+                        <li class="favorites-list-item">
+                            <a class="favorites-category">Коллекции</a>
+                            <span>- как мелировать волосы</span>
+                        </li>
+                        <li class="favorites-list-item">
+                            <a class="favorites-category">Авиабилеты</a>
+                            <span>- из Екатеринбурга</span>
+                        </li>
+                    </ul>
+                </section>
+                <section class="widget jokes">
+                    <h2>
+                        <a class="blue-link" href="">Лучшие анекдоты</a>
+                    </h2>
+                    <div>
+                        <span>Раздел:</span>
+                        <a class="blue-link" href="">Медицинские</a>
+                    </div>
+                    <span>- Вас лечить хорошо или бесплатно?</span>
+                    <a class="blue-link jokes-link" href="#">↻ Показать ещё</a>
+                </section>
             </div>
-            <div class="jokes">
-                <h2>
-                    <a href="">Лучшие анекдоты</a>
-                </h2>
-                <span>Раздел</span>
-                <a href="">Медицинские</a>
-                <p>Вас лечить хорошо или бесплатно?</p>
+            <div class="column">
+                <section class="widget">
+                    <h2>
+                        <a class="blue-link" href="">Телепрограмма</a>
+                    </h2>
+                    <ul class="tv-list">
+                        <li class="tv-list-item">
+                            <span>16:00</span>
+                            <span>Понять. Простить</span>
+                            <span class="grey">41 домашний</span>
+                        </li>
+                        <li class="tv-list-item">
+                            <span>16:30</span>
+                            <span>Место встречи</span>
+                            <span class="grey">НТВ</span>
+                        </li>
+                        <li class="tv-list-item">
+                            <span>16:30</span>
+                            <span>Детективы</span>
+                            <span class="grey">Первый канал</span>
+                        </li>
+                        <li class="tv-list-item">
+                            <span>16:30</span>
+                            <span>Новости</span>
+                            <span class="grey">РЕН ТВ</span>
+                        </li>
+                        <li class="tv-list-item">
+                            <span>16:30</span>
+                            <span>Гадалка</span>
+                            <span class="grey">ТВ-3</span>
+                        </li>
+                        <li class="tv-list-item">
+                            <span>16:30</span>
+                            <span>Реальные пацаны</span>
+                            <span class="grey">ТНТ</span>
+                        </li>
+                    </ul>
+                </section>
+                <section class="auto-news widget">
+                    <h2>
+                        <a class="blue-link" href="">Автомобильные новости</a>
+                    </h2>
+                    <div>
+                        <ul class="auto-news-list">
+                            <li class="auto-news-list-item">
+                                <a href="">Peugeot 308: То ли доля, то ли не доля</a>
+                                <span class="grey">07:04</span>
+                            </li>
+                            <li class="auto-news-list-item">
+                                <a href="">Tesla Model 3: Best ever</a>
+                                <span class="grey">07:04</span>
+                            </li>
+                            <li class="auto-news-list-item">
+                                <a href="">Renault Duster: Тень командора Андерсона</a>
+                                <span class="grey">08:15</span>
+                            </li>
+                            <li class="auto-news-list-item">
+                                <a href="">J.D.Power: качество Jaguar ниже, чем у Kia</a>
+                                <span class="grey">12:00</span>
+                            </li>
+                            <li class="auto-news-list-item">
+                                <a href="">Tesla Semi: послание</a>
+                                <span class="grey">13:10</span>
+                            </li>
+                            <li class="auto-news-list-item">
+                                <a href="">Infiniti QX80: Дело было на карьере</a>
+                                <span class="grey">14:52</span>
+                            </li>
+                            <li class="auto-news-list-item">
+                                <a href="">Citroen DS: Падение Парижа</a>
+                                <span class="grey">15:30</span>
+                            </li>
+                            <li class="auto-news-list-item">
+                                <a href="">Lada Vesta: Утро капитана Андерсона</a>
+                                <span class="grey">08:15</span>
+                            </li>
+                            <li class="auto-news-list-item">
+                                <a href="">Subaru Outback: Тяжкий сон «Арматы»</a>
+                                <span class="grey">18:00</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
             </div>
-            <div class="tv">
-                <h2>
-                    <a href="">Телепрограмма</a>
-                </h2>
-                <ul class="tv-list">
-                    <li class="tv-list-item">
-                        <span>16:00</span>
-                        <span>Понять. Простить</span>
-                        <span class="grey">41 домашний</span>
-                    </li>
-                    <li class="tv-list-item">
-                        <span>16:30</span>
-                        <span>Место встречи</span>
-                        <span class="grey">НТВ</span>
-                    </li>
-                    <li class="tv-list-item">
-                        <span>16:30</span>
-                        <span>Детективы</span>
-                        <span class="grey">Первый канал</span>
-                    </li>
-                    <li class="tv-list-item">
-                        <span>16:30</span>
-                        <span>Новости</span>
-                        <span class="grey">РЕН ТВ</span>
-                    </li>
-                    <li class="tv-list-item">
-                        <span>16:30</span>
-                        <span>Гадалка</span>
-                        <span class="grey">ТВ-3</span>
-                    </li>
-                    <li class="tv-list-item">
-                        <span>16:30</span>
-                        <span>Реальные пацаны</span>
-                        <span class="grey">ТНТ</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="auto-news">
-                <h2>
-                    <a href="">Автомобильные новости</a>
-                </h2>
-                <ul class="auto-news-list">
-                    <li class="auto-news-list-item">
-                        <a href="">Peugeot 308: То ли доля, то ли не доля</a>
-                        <span class="grey">07:04</span>
-                    </li>
-                    <li class="auto-news-list-item">
-                        <a href="">Renault Duster: Тень командора Андерсона</a>
-                        <span class="grey">08:15</span>
-                    </li>
-                    <li class="auto-news-list-item">
-                        <a href="">J.D.Power: качество Jaguar ниже, чем у Kia</a>
-                        <span class="grey">12:00</span>
-                    </li>
-                    <li class="auto-news-list-item">
-                        <a href="">Infiniti QX80: Дело было на карьере</a>
-                        <span class="grey">14:52</span>
-                    </li>
-                    <li class="auto-news-list-item">
-                        <a href="">Citroen DS: Падение Парижа</a>
-                        <span class="grey">15:30</span>
-                    </li>
-                    <li class="auto-news-list-item">
-                        <a href="">Subaru Outback: Тяжкий сон «Арматы»</a>
-                        <span class="grey">18:00</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="weather">
-                <div class="weather-summary">
-                    <h2><a href="">Погода</a></h2>                
-                    <div class="weather-icon"></div>
-                    <span class="weather-now">-3 °C</span>
-                </div>
-                <span>Вечер -5, Ночь -7</span>
-            </div>
-            <div class="traffic">
-                <div class="traffic-summary">
-                    <h2><a href="">Пробки</a></h2>
-                    <div class="traffic-icon"></div>
-                    <span class="traffic-now">1 балл</span>
-                </div>
-                <span>На дорогах свободно</span>
-            </div>
-            <div class="map">
-                <h2>
-                    <a href="">Карта Екатеринбурга</a>
-                </h2>
-                <ul class="map-list">
-                    <li class="map-list-item">
-                        <a href="">Такси</a>
-                    </li>
-                    <li class="map-list-item">
-                        <a href="">Расписания</a>
-                    </li>
-                    <li class="map-list-item">
-                        <a href="">Междугородние автобусы</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="afisha">
-                <h2>
-                    <a href="">Афиша</a>
-                </h2>
-                <ul class="afisha-list">
-                    <li class="afisha-list-item">
-                        <a href="">Субурбикон</a>
-                        <span class="grey">премьера в четверг</span>
-                    </li>
-                    <li class="afisha-list-item">
-                        <a href="">Последний богатырь</a>
-                        <span class="grey">приключения</span>
-                    </li>
-                    <li class="afisha-list-item">
-                        <a href="">Фиксики: Большой секрет</a>
-                        <span class="grey">мультфильм</span>
-                    </li>
-                    <li class="afisha-list-item">
-                        <a href="">Тор: Рагнарёк</a>
-                        <span class="grey">фэнтези</span>
-                    </li>
-                    <li class="afisha-list-item">
-                        <a href="">Убийство в восточном...</a>
-                        <span class="grey">драма</span>
-                    </li>
-                    <li class="afisha-list-item">
-                        Концерты - Brainstorm
-                    </li>
-                </ul>
+            <div class="column">
+                <section class="widget weather">
+                    <h2 class="weather-summary">
+                        <a class="blue-link" href="">Погода</a>
+                        <span class="weather-icon"></span>
+                        <span class="weather-now">-3 °C</span>
+                    </h2>
+                    <span>Вечер -5, Ночь -7</span>
+                </section>
+                <section class="widget">
+                        <h2 class="traffic-summary">
+                            <a class="blue-link" href="">Пробки</a>
+                            <span class="traffic-icon"></span>
+                            <span class="traffic-now">1 балл</span>
+                        </h2>
+                    <span>На дорогах свободно</span>
+                </section>
+                <section class="widget map">
+                    <h2>
+                        <a class="blue-link" href="">Карта Екатеринбурга</a>
+                    </h2>
+                    <ul class="map-list">
+                        <li class="map-list-item">
+                            <a href="">Такси</a>
+                        </li>
+                        <li class="map-list-item">
+                            <a href="">Расписания</a>
+                        </li>
+                        <li class="map-list-item">
+                            <a href="">Междугородние автобусы</a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="widget">
+                    <h2>
+                        <a class="blue-link" href="">Афиша</a>
+                    </h2>
+                    <ul class="afisha-list">
+                        <li class="afisha-list-item">
+                            <a href="">Субурбикон</a>
+                            <span class="grey">премьера в четверг</span>
+                        </li>
+                        <li class="afisha-list-item">
+                            <a href="">Последний богатырь</a>
+                            <span class="grey">приключения</span>
+                        </li>
+                        <li class="afisha-list-item">
+                            <a href="">Фиксики: Большой секрет</a>
+                            <span class="grey">мультфильм</span>
+                        </li>
+                        <li class="afisha-list-item">
+                            <a href="">Тор: Рагнарёк</a>
+                            <span class="grey">фэнтези</span>
+                        </li>
+                        <li class="afisha-list-item">
+                            <a href="">Убийство в восточном...</a>
+                            <span class="grey">драма</span>
+                        </li>
+                        <li class="afisha-list-item">
+                            Концерты - Brainstorm
+                        </li>
+                    </ul>
+                </section>
             </div>
         </section>
     </main>
