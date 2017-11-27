@@ -188,7 +188,7 @@ li
 .search-input
 {
     border: 2px solid #ffdb4d;
-    width: 90%;
+    width: 80%;
     height: 40px;
     box-sizing: border-box;
     font-size: 24px;
@@ -208,6 +208,15 @@ li
     outline-width: 0;
 }
 
+.button-arrow
+{
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #ffdb4d;
+}
+
 .banner 
 {
     grid-area: b;
@@ -217,8 +226,8 @@ li
 
 .banner-image
 {
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
 }
 
 .grey
